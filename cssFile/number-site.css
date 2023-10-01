@@ -184,13 +184,9 @@ header .header-right .hamburger div {
        
     }
     .input-button {
-        width: 25px;
-        height: 30px;
+        width: 300px;
+        height: 40px;
     }
-    .search-title {
-        font-size: 25px;
-    }
-     .search-button {
-        height: 30px;
-    }
+    
+     
 }
