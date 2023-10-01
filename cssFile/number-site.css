@@ -1,0 +1,193 @@
+body {
+    height: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    
+    background-image: url('https://res-3.cloudinary.com/fieldfisher/image/upload/f_jpg,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05'); 
+        
+    
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+img {
+    width: 100%;
+}
+header {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: black;
+
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+
+.div-input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-button {
+
+    height: 40px;
+    width: 480px;
+    border: 2px rgb(211, 203, 203) solid;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #0b2239;
+    outline: none;
+    color: white;
+
+    
+    
+}
+
+.search-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 230px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+.search-button {
+    height: 40px;
+    width: 70px;
+    background-color: #4ad295;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+    
+}
+
+.cp-section {
+    background-color: #232323 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 900px;
+    padding: 30px;
+
+}
+.cp-title {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+       
+    }
+    .input-button {
+        width: 300px;
+        height: 40px;
+    }
+    .search-title {
+        font-size: 25px;
+    }
+}
